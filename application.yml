@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    password: 1qaz!QAZebpps
+    url: jdbc:sqlserver://ebpps-dev.database.windows.net:1433;databaseName=ebpps-api
+    username: wivx@ebpps-dev
+  jpa:
+    hibernate:
+      ddl-auto: none       
