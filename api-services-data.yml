@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: peer1
   datasource:
     password: 1qaz!QAZebpps
     url: jdbc:sqlserver://ebpps-dev.database.windows.net:1433;databaseName=ebpps-api
