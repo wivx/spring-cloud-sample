@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: api-services-data
   profiles:
     active: peer1
   datasource:
