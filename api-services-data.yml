@@ -3,10 +3,15 @@ spring:
     name: api-services-data
   profiles:
     active: peer1
+#  datasource:
+#    password: 1qaz!QAZebpps
+#    url: jdbc:sqlserver://ebpps-dev.database.windows.net:1433;databaseName=ebpps-api
+#    username: wivx@ebpps-dev
   datasource:
-    password: 1qaz!QAZebpps
-    url: jdbc:sqlserver://ebpps-dev.database.windows.net:1433;databaseName=ebpps-api
-    username: wivx@ebpps-dev
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    password: tpcpassword
+    url: jdbc:db2://tpmdms-dev.xuzoo.net:50001/TPCMAM:currentSchema=MAXIMO;
+    username: db2inst1
   jpa:
     hibernate:
       ddl-auto: none       
