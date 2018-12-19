@@ -14,4 +14,11 @@ spring:
     username: db2inst1
   jpa:
     hibernate:
-      ddl-auto: none       
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.DB2Dialect
+    show-sql: true       
